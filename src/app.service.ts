@@ -15,7 +15,7 @@ export class AppService {
   private users: User[] = []
 
 
-  
+
   healthGet():string {
 
     return "I'm okay!" 
@@ -37,7 +37,7 @@ export class AppService {
   tweetsGet(page?: number) {
 
     return this.tweets.reverse()
-      .slice((page ? page - 1 : 0) * 10, page ? page * 10 : 10).map((tweet) => ({
+      .slice((page ? page - 1 : 0) * 15, page ? page * 15 : 15).map((tweet) => ({
 
         username: tweet.user.username,
         avatar: tweet.user.avatar,
