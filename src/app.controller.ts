@@ -23,6 +23,7 @@ export class AppController {
 
 
   @Post('/sign-up')
+  @HttpCode(200)
   signUp(@Body() body: UserDto) {
 
     return this.appService.signUp(body)
