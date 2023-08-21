@@ -14,7 +14,15 @@ export class AppService {
   // arr users sub
   private users: User[] = []
 
- 
+
+  
+  healthGet():string {
+
+    return "I'm okay!" 
+
+  }
+
+
 
   signUp(body: UserDto) {
 

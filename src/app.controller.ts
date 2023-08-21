@@ -13,6 +13,12 @@ export class AppController {
   //   return this.appService.getHello();
   // }
   
+  @Get('/health')
+  healthGet():string {
+
+    return this.appService.healthGet()
+    
+  }
 
 
   @Post('/sign-up')
