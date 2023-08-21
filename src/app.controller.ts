@@ -13,13 +13,14 @@ export class AppController {
   //   return this.appService.getHello();
   // }
   
-  @Get('/health')
-  @HttpCode(200)
-  healthGet():string {
+  //teste não por /health na rota
+  @Get()
+  getHealth() {
 
-    return this.appService.healthGet()
+    return "I'm okay!"
 
   }
+
 
 
   @Post('/sign-up')

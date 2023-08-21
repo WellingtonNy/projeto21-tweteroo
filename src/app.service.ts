@@ -15,15 +15,7 @@ export class AppService {
   private users: User[] = []
 
 
-
-  healthGet():string {
-
-    return "I'm okay!" 
-
-  }
-
-
-
+ 
   signUp(body: UserDto) {
 
     const user = new User(body.username, body.avatar)
