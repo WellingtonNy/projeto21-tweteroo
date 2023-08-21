@@ -14,10 +14,11 @@ export class AppController {
   // }
   
   @Get('/health')
+  @HttpCode(200)
   healthGet():string {
 
     return this.appService.healthGet()
-    
+
   }
 
 
